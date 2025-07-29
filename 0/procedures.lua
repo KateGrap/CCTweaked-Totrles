@@ -1,15 +1,15 @@
 -- first procedures
-function move(to)
-  turtle.turnLeft(to)
-  turtle.turnLeft(to)
+function rotate(to)
+  turtle.turnLeft()
+  turtle.turnLeft()
 end
 
-
---secong procedures
-function move(to, search)
-     turtle.turnLeft(to)
-    turtle.detect(seatch "Smooth Stone")
-    turtle.turnRight(to)
-    turtle.turnRight(to)
-    rurtle.forward(to)
+--secong procedures 
+function move(to)
+function search(what)
+  repeat
+    turtle.turnLeft()
+    searh(tutle.detect("Smooth Stone"))
+    turtle.turnRight()
+  until turtle.forward()
 end
