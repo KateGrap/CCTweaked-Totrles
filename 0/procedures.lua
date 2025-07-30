@@ -1,15 +1,7 @@
--- first procedures
-function rotate()
+Check_Block = function(target)
+  target = target or "minecraft:cobblestone"
   turtle.turnLeft()
-  turtle.turnLeft()
-end
-
---secong procedures 
-function move()
-  turtle.turnLeft()
-  function seacrh()
-    seacrh(turtle.detect("Smooth Stone"))
-  end
-  turtle.turnRight()
-  turtle.forward()
+  local success, data = turtle.inspect()
+  turtle.Right()
+  return success, data.name = target
 end
