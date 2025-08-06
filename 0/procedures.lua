@@ -11,7 +11,15 @@ end
 Check_Block_Forward = function(target)
   target = target or "minecraft:cobblestone"
   local success, data = turtle.inspect()
-  turtle.forward()
+  if success then
+    if data.name == target then
+        return true
+    else
+      turtle.forward() and return false
+    end
+else
+    return false
+end
   return success, data.name = target
 end
   
